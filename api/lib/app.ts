@@ -24,7 +24,7 @@ class App {
 
    private initializeMiddlewares(): void {
         this.app.use(bodyParser.json());
-        this.app.use(morgan('dev'));
+        //this.app.use(morgan('dev'));
         this.app.use(this.requestLogMiddleware);
    }
 
